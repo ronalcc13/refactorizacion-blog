@@ -179,3 +179,47 @@ a:hover {
     flex: 1 1 100%;
   }
 }
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.info-col {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.info-titulo {
+  font-size: 2rem;
+  color: #092e5f;
+  margin-bottom: 20px;
+}
+
+.info-texto {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.educacion-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.educacion-item {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
