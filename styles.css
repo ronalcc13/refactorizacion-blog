@@ -1,35 +1,37 @@
 :root {
-  --bg: #0b0c10;
-  --card: #111217;
-  --border: #1e2028;
-  --text: #e8e8ea;
-  --muted: #b4b5c0;
-  --primary: #5b8cff;
-  --accent: #22c55e;
+  --bg: #0a0a0f;
+  --card: #1a1b26;
+  --border: #2d2f3a;
+  --text: #f1f1f1;
+  --muted: #c0c2d1;
+  --primary: #3b82f6;
+  --accent: #10b981;
   --radius: 12px;
   --container: 1100px;
 }
+
 body.theme-light {
-  --bg: #f9fafb;
-  --card: #ffffff;
-  --border: #e5e7eb;
+  --bg: #ffffff;
+  --card: #f3f4f6;
+  --border: #d1d5db;
   --text: #111827;
-  --muted: #6b7280;
+  --muted: #4b5563;
   --primary: #2563eb;
-  --accent: #16a34a;
+  --accent: #059669;
 }
 
 body.theme-gamer {
-  --bg: #030d20;
-  --card: #f78c00;
-  --border: #27272a;
-  --text: #f4f4f5;
-  --muted: #a1a1aa;
-  --primary: #8b5cf6;
-  --accent: #06d6a0;
-  --extra1: #ff006e;
+  --bg: #0d0221;
+  --card: #1d1135;
+  --border: #3a0ca3;
+  --text: #f8f9fa;
+  --muted: #adb5bd;
+  --primary: #ff006e;
+  --accent: #3efc8e;
+  --extra1: #f72585;
   --extra2: #ffd60a;
 }
+
 
 * {
   box-sizing: border-box;
@@ -178,6 +180,67 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.06);
   color: var(--text);
 }
+
+.section-bio, .section-work {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.bio-col, .work-grid {
+  margin-bottom: 2rem;
+}
+
+.bio-heading, .work-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.bio-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.edu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.edu-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.work-role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.work-place {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+
 .info-grid {
   display: grid;
   grid-template-columns: 1fr;
