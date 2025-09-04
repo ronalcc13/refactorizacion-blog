@@ -170,7 +170,8 @@ section {
 }
 .btn-principal {
   background: var(--primary);
-  color: #fff;
+  color: var(--text);
+  /* color: #fff; */
 }
 .btn-secundario {
   background: transparent;
@@ -253,6 +254,8 @@ section {
 }
 .btn-principal:hover {
   transform: translateY(-3px);
+  background-color: var(--primary);
+  color: var(--text);
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
 }
 .btn-secundario:hover {
