@@ -212,6 +212,14 @@ section {
   border-radius: 12px;
   border: 1px solid var(--border);
 }
+.tarjeta-2 {
+  background: var(--muted);
+  color: var(--bg);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 0.5rem;
+}
 .proyectos-grid {
   display: grid;
   grid-template-columns: 1fr;
