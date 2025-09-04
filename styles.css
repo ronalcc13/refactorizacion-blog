@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg: #0b0c10;
   --card: #111217;
   --border: #1e2028;
@@ -8,7 +8,32 @@
   --accent: #22c55e;
   --radius: 12px;
   --container: 1100px;
+} */
+/* :root.theme-light {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --accent: #16a34a;
+  --radius: 12px;
+  --container: 1100px;
+} */
+:root {
+  --bg: #030d20;
+  --card: #f78c00;
+  --border: #27272a;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --primary: #8b5cf6;
+  --accent: #06d6a0;
+  --extra1: #ff006e;
+  --extra2: #ffd60a;
+  --radius: 12px;
+  --container: 1100px;
 }
+
 * {
   box-sizing: border-box;
 }
