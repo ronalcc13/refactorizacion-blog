@@ -17,19 +17,22 @@
   </head>
   <body class="theme-gamer">
     <header class="site-header">
-      <div class="header-container">
-        <nav class="main-nav" aria-label="Menú principal">
-          <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-          <a href="#educacion" class="nav-link">Educación</a>
-          <a href="#experiencia" class="nav-link">Experiencia</a>
-          <a href="#proyectos" class="nav-link">Proyectos</a>
-          <a href="#cursos" class="nav-link">Cursos</a>
-          <a href="#habilidades" class="nav-link">Habilidades</a>
-          <a href="#idiomas" class="nav-link">Idiomas</a>
-          <a href="#contacto" class="nav-link">Contacto</a>
-          <button id="theme-toggle" class="btn-secundario">Cambiar tema</button>
-        </nav>
-      </div>
+       <nav class="main-nav" aria-label="Menú principal">
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#educacion" class="nav-link">Educación</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#cursos" class="nav-link">Cursos</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#idiomas" class="nav-link">Idiomas</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn-secundario">Cambiar tema</button>
+      </nav>
     </header>
 
     <section class="portada">
@@ -264,6 +267,12 @@
       <p class="footer-copy">© 2025 Ronaldo Cahuasiri Colque</p>
     </footer>
     <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navList = document.querySelector('.nav-list');
+
+      navToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+      });
       const themes = ["", "theme-light", "theme-gamer"];
       let index = 0;
     
